@@ -68,7 +68,8 @@ body{
 }
 .section1 .card .images {
     background-size: cover;
-    min-width: 150px;
+    background-position: center;
+    min-width: 120px;
     height: 100%;
     border-radius: 40px 0 0 40px;
     display: flex;
@@ -81,19 +82,15 @@ body{
 }
 .section1 .card div.dragon-ball {
     background-image: url("../images/dragon\ ball.jfif");
-    background-position: center right;
 }
 .section1 .card div.naruto {
     background-image: url("../images/naruto.jfif");
-    background-position: center;
 }
 .section1 .card div.hunter-x-hunter {
     background-image: url("../images/hunter\ x\ hunter.jfif");
-    background-position: center;
 }
 .section1 .card div.attack-on-titan {
     background-image: url("../images/attack\ on\ titan.jfif");
-    background-position: center;
 }
 .section1 .card .images .icon {
     text-decoration: none;
@@ -112,16 +109,14 @@ body{
     font-size: 20px;
 }
 .section1 .card .content {
-    width: 0;
+    min-width: 400px;
     height: 100%;
-    margin-left: -50px;
+    margin-left: -20px;
     border-radius: 20px 39px 39px 20px;
     background-color: white;
-    overflow: hidden;
-    transition: .5s width , .2s box-shadow .2s;
+    transition: .5s width , .2s box-shadow ;
 }
 .section1 .card:hover .content{
-    width: 400px;
     box-shadow: -10px 0px 100px 10px #1c1c1c;
 }
 .section1 .card .content .title {
@@ -156,3 +151,123 @@ body{
     padding: 10px 10px 0 15px;
 }
 /* END SECTION 1 */
+
+/* START SECTION2 */
+.section2 .row {
+    display: flex;
+}
+.section2 .row1 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #F3F3F3;
+    border-radius: 60px;
+    overflow-x: hidden;
+    padding: 0 10px;
+    margin: 20px 0;
+    box-shadow: inset 0 0 15px -10px black;
+}
+.section2 .row2 {
+    justify-content: center;
+}
+.section2 .container {
+    display: grid;
+    grid-template-rows: auto 1fr;
+    height: 100%;
+    padding-top: 20px;
+}
+.section2 .card {
+    width: 100px;
+    min-width: 100px;
+    height: 100px;
+    min-height: 100px;
+    background-color: #F3F3F3;
+    border-radius: 50px;
+    box-shadow: 0 0 10px -5px black;
+    overflow: hidden;
+    transition: .5s min-width, .5s height;
+    display: flex;
+}
+.section2 .row1 .card {
+    margin: 10px 0 10px 10px;
+}
+.section2 .row2 .card {
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 0 10px;
+    box-shadow: inset 0 0 15px -10px black;
+}
+
+.section2 .row1 .card:hover {
+    min-width: 300px;
+}
+.section2 .row2 .card:hover {
+    min-width: 250px;
+    height: 200px;
+}
+.section2 .image {
+    width: 90px;
+    min-width: 90px;
+    min-height: 90px;
+    height: 90px;
+    background-size: cover;
+    border-radius: 50%;
+    margin: 5px;
+    box-shadow: 0 0 10px 0px black;
+}
+.section2 .image.luffy {
+    background-image: url("../images/luffy.jfif");
+}
+.section2 .image.zoro {
+    background-image: url("../images/zoro.jfif");
+}
+.section2 .image.sanji {
+    background-image: url("../images/sanji.jfif");
+}
+.section2 .image.roger {
+    background-image: url("../images/roger.jfif");
+}
+.section2 .image.doflamingo {
+    background-image: url("../images/doflamingo.jfif");
+}
+.section2 .row1 .card .content {
+    min-width: 250px;
+    min-height: 300px;
+}
+.section2 .row2 .card .content {
+    min-width: 250px;
+    min-height: calc(100% - 100px);
+}
+
+
+
+
+
+.section2 .row1 h3 {
+    display: block;
+    padding: 10px 10px 0px;
+    font-size: 18px;
+    font-weight: 600;
+}
+.section2 .row2 h3 {
+    display: block;
+    padding: 10px 10px 0px;
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
+}
+.section2 .row1 p {
+    font-size: 12px;
+    font-weight: 500;
+    color: #777;
+    padding-left: 10px;
+}
+.section2 .row2 p {
+    font-size: 12px;
+    font-weight: 500;
+    color: #777;
+    padding-left: 10px;
+    text-align: center;
+}
+/* END SECTION2 */
