@@ -2,6 +2,8 @@
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 body{
@@ -12,6 +14,9 @@ body{
     padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
+}
+.section {
+    height: 100vh;
 }
 
 /* SMALL */
@@ -34,3 +39,120 @@ body{
         width: 1170px;
     }
 }
+
+/* START SECTION 1 */
+.section1 {
+    background-color: #F3F3F3;
+}
+.section1 .container {
+    height: 100%;
+    padding-top: 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    overflow-x: hidden;
+}
+.section1 .card {
+    width: 80px;
+    min-width: 80px;
+    height: 400px;
+    border-radius: 40px;
+    display: flex;
+    overflow: hidden;
+    transition: .5s min-width;
+    margin: 0 10px;
+    box-shadow: 0 0 20px -5px black;
+}
+.section1 .card:hover {
+    min-width: 500px;
+}
+.section1 .card .images {
+    background-size: cover;
+    min-width: 150px;
+    height: 100%;
+    border-radius: 40px 0 0 40px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+.section1 .card div.one-piece {
+    background-image: url("../images/one\ piece.jpg");
+    background-position: left bottom;
+}
+.section1 .card div.dragon-ball {
+    background-image: url("../images/dragon\ ball.jfif");
+    background-position: center right;
+}
+.section1 .card div.naruto {
+    background-image: url("../images/naruto.jfif");
+    background-position: center;
+}
+.section1 .card div.hunter-x-hunter {
+    background-image: url("../images/hunter\ x\ hunter.jfif");
+    background-position: center;
+}
+.section1 .card div.attack-on-titan {
+    background-image: url("../images/attack\ on\ titan.jfif");
+    background-position: center;
+}
+.section1 .card .images .icon {
+    text-decoration: none;
+    color: #1c1c1c;
+    width: 50px;
+    height: 50px;
+    display: grid;
+    place-items: center;
+    background-color: #F3F3F3;
+    border-radius: 50%;
+    margin: 15px;
+    box-shadow: 0 0 10px 0px #1c1c1c;
+    z-index: 10;
+}
+.section1 .card .images i {
+    font-size: 20px;
+}
+.section1 .card .content {
+    width: 0;
+    height: 100%;
+    margin-left: -50px;
+    border-radius: 20px 39px 39px 20px;
+    background-color: white;
+    overflow: hidden;
+    transition: .5s width , .2s box-shadow .2s;
+}
+.section1 .card:hover .content{
+    width: 400px;
+    box-shadow: -10px 0px 100px 10px #1c1c1c;
+}
+.section1 .card .content .title {
+    padding-left: 15px;
+    padding-top: 20px;
+    font-weight: 600;
+}
+.section1 .card .content .categories {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 10px;
+}
+.section1 .card .content .categories span {
+    font-size: 10px;
+    font-weight: 600;
+    padding: 5px 10px;
+    border-radius: 15px;
+    background-color: #F3F3F3;
+    margin: 5px 5px;
+    display: block;
+}
+.section1 .card .content .story {
+    padding-left: 10px;
+    padding-top: 10px;
+    font-size: 14px;
+    color: #333;
+}
+.section1 .card .content p {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 1.5;
+    padding: 10px 10px 0 15px;
+}
+/* END SECTION 1 */
